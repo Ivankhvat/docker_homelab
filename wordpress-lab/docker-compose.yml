@@ -1,0 +1,54 @@
+services:
+
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress-lab
+    restart: unless-stopped
+
+    ports:
+      - "8084:80"
+
+    environment:
+      WORDPRESS_DB_HOST: wordpress-db
+      WORDPRESS_DB_NAME: wordpress_db
+      WORDPRESS_DB_USER: wordpress_user
+      WORDPRESS_DB_PASSWORD: wordpress_pass
+
+    volumes:
+      - wordpress_files:/var/www/html
+
+    depends_on:
+      - wordpress-db
+
+  wordpress-db:
+    image: mariadb:latest
+    container_name: wordpress-db-lab
+    restart: unless-stopped
+
+    environment:
+      MYSQL_DATABASE: wordpress_db
+      MYSQL_USER: wordpress_user
+      MYSQL_PASSWORD: wordpress_pass
+      MYSQL_ROOT_PASSWORD: root_pass
+
+    volumes:
+      - wordpress_db_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin-lab
+    restart: unless-stopped
+
+    ports:
+      - "8085:80"
+
+    environment:
+      PMA_HOST: wordpress-db
+      PMA_PORT: 3306
+
+    depends_on:
+      - wordpress-db
+
+volumes:
+  wordpress_files:
+  wordpress_db_data:
