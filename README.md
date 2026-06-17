@@ -1,2 +1,28 @@
 # docker_homelab
-Docker, Linux and Infrastructure Engineering Lab
+
+Практический стенд для изучения Docker, Linux и контейнеризации.
+
+## Выполненные задачи
+
+- Установка Ubuntu Server
+- Настройка Docker Engine
+- Развертывание Portainer
+- Создание Docker Compose Stack
+- Настройка Nginx
+- Работа с Docker Volumes
+- Развертывание MariaDB
+- Развертывание Adminer
+- Развертывание WordPress
+- Настройка phpMyAdmin
+- Backup и Restore базы данных
+
+## Используемые технологии
+
+- Ubuntu Server
+- Docker
+- Docker Compose
+- Portainer
+- Nginx
+- MariaDB
+- WordPress
+- phpMyAdmin
