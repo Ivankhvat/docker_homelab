@@ -82,3 +82,8 @@ df
 lsblk
 vgdisplay
 
+### GitLab CE
+Развертывание GitLab CE в Docker.
+Настройка volumes.
+Настройка доступа по доменному имени.
+
