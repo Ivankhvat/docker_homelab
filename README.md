@@ -67,3 +67,18 @@ Ubuntu Server
 - Backup and Restore
 - Troubleshooting
 - GitHub Documentation
+
+### Linux Storage Management
+- LVM (Logical Volume Manager)
+- Volume Group expansion
+- Logical Volume extension
+- Online filesystem resize
+- Disk capacity management
+
+Commands used:
+lvextend
+resize2fs
+df
+lsblk
+vgdisplay
+
