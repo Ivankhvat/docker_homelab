@@ -87,3 +87,11 @@ vgdisplay
 Настройка volumes.
 Настройка доступа по доменному имени.
 
+## Network Configuration
+- Static IP configured via Netplan
+- Hostname resolution through Windows hosts file
+- SSH administration via Termius
+- Local DNS names:
+  - site1.local
+  - site2.local
+  - gitlab.local
