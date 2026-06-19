@@ -150,7 +150,7 @@ Validation & Testing
 
 # Архитектура проекта
 
-Ubuntu Server 24.04
+Ubuntu Server 26.04
 │
 ├── Docker Engine
 │
