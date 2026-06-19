@@ -1,124 +1,114 @@
-# docker_homelab
+# Docker Homelab
 
-Практический стенд для изучения Docker, Linux и контейнеризации.
+Практический DevOps-стенд для изучения Linux, Docker, сетей, GitLab CI/CD и веб-инфраструктуры.
 
-
-## Project Architecture
-
-Ubuntu Server
+Ubuntu Server 26.04
 │
 ├── Docker Engine
+│
 ├── Portainer
-├── Nginx
-├── MariaDB
+├── Nginx Proxy Manager
+│
 ├── WordPress
+│   └── MariaDB
+│
 ├── phpMyAdmin
 ├── Adminer
-└── Nginx Proxy Manager
+│
+├── GitLab CE
+│   └── GitLab Runner
+│
+└── CI/CD Pipelines
 
-## Technologies
-- Ubuntu Server
+### Infrastructure
+
+- Ubuntu Server 26.04
 - Docker
 - Docker Compose
 - Portainer
+
+### Web Stack
+
 - Nginx
-- MariaDB
+- Nginx Proxy Manager
 - WordPress
+- MariaDB
 - phpMyAdmin
 - Adminer
-- Nginx Proxy Manager
 
-## Выполненные задачи
-- Установка Ubuntu Server
-- Настройка Docker Engine
-- Развертывание Portainer
-- Создание Docker Compose Stack
-- Настройка Nginx
-- Работа с Docker Volumes
-- Развертывание MariaDB
-- Развертывание Adminer
-- Развертывание WordPress
-- Настройка phpMyAdmin
-- Backup и Restore базы данных
+### DevOps
 
-## Reverse Proxy Lab
+- Git
+- GitLab CE
+- GitLab Runner
+- CI/CD Pipelines
 
-### Реализовано
-- Развернут Nginx Proxy Manager
-- Настроены Proxy Hosts
-- Настроена маршрутизация по доменным именам
-- Настроены локальные DNS-записи через hosts
-- Выполнена диагностика Docker Network
-- Устранена ошибка 502 Bad Gateway
+### Networking
 
-### Домены
-- site1.local → site1 container
-- site2.local → site2 container
+- SSH
+- Netplan
+- Reverse Proxy
+- DNS / Hosts
 
-## Skills Demonstrated
+  Реализованные лаборатории
+  
+Docker Lab
+✅ Docker Engine
+✅ Docker Compose
+✅ Volumes
+✅ Networks
+✅ Container Management
+
+Reverse Proxy Lab
+✅ Nginx Proxy Manager
+✅ Domain Routing
+✅ Local DNS Resolution
+✅ Troubleshooting 502 Errors
+
+Домены:
+site1.local
+site2.local
+
+Linux Storage Management
+✅ LVM
+✅ Volume Group Expansion
+✅ Logical Volume Extension
+✅ Online Filesystem Resize
+
+Использованные команды:
+lvextend
+resize2fs
+lsblk
+vgdisplay
+
+GitLab CI/CD Lab
+✅ Self-hosted GitLab CE
+✅ GitLab Runner
+✅ Docker Executor
+✅ Multi-stage Pipeline
+✅ Docker Compose Validation
+✅ Runner Troubleshooting
+
+Pipeline:
+Git Commit
+    ↓
+GitLab Repository
+    ↓
+GitLab Runner
+    ↓
+Docker Executor
+    ↓
+Validation & Testing
+
+Демонстрируемые навыки:
 - Linux Administration
 - Docker Containerization
 - Docker Compose
 - Docker Networking
-- Docker Volumes
 - Reverse Proxy Configuration
-- Web Hosting
-- MariaDB Administration
-- Backup and Restore
-- Troubleshooting
-- GitHub Documentation
-
-### Linux Storage Management
-- LVM (Logical Volume Manager)
-- Volume Group expansion
-- Logical Volume extension
-- Online filesystem resize
-- Disk capacity management
-
-Commands used:
-lvextend
-resize2fs
-df
-lsblk
-vgdisplay
-
-### GitLab CE
-Развертывание GitLab CE в Docker.
-Настройка volumes.
-Настройка доступа по доменному имени.
-
-## Network Configuration
-- Static IP configured via Netplan
-- Hostname resolution through Windows hosts file
-- SSH administration via Termius
-- Local DNS names:
-  - site1.local
-  - site2.local
-  - gitlab.local
-    
-## GitLab CI/CD Lab
-
-Implemented:
-- Self-hosted GitLab CE
-- Self-hosted GitLab Runner
-- Docker Executor
-- CI/CD Pipeline
-- Runner troubleshooting
-- GitLab repository management
-
-Pipeline flow:
-Git Commit → GitLab → GitLab Runner → Docker Executor → Job Execution
-
-## GitLab CI/CD Lab
-
-Implemented:
-- Self-hosted GitLab CE
+- Git
+- GitLab
 - GitLab Runner
-- Docker Executor
-- CI/CD pipeline
-- Docker Compose syntax validation
-- Multi-stage pipeline: validate → test
-- Troubleshooting runner network and clone URL issues
-
-Pipeline result:
-- Pipeline #3: Passed
+- CI/CD
+- Infrastructure Troubleshooting
+- LVM Storage Management
