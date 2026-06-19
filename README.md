@@ -95,3 +95,16 @@ vgdisplay
   - site1.local
   - site2.local
   - gitlab.local
+    
+## GitLab CI/CD Lab
+
+Implemented:
+- Self-hosted GitLab CE
+- Self-hosted GitLab Runner
+- Docker Executor
+- CI/CD Pipeline
+- Runner troubleshooting
+- GitLab repository management
+
+Pipeline flow:
+Git Commit → GitLab → GitLab Runner → Docker Executor → Job Execution
