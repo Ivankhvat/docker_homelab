@@ -53,6 +53,7 @@ Ubuntu Server 26.04
   Реализованные лаборатории
   
 Docker Lab
+
 ✅ Docker Engine
 ✅ Docker Compose
 ✅ Volumes
@@ -60,6 +61,7 @@ Docker Lab
 ✅ Container Management
 
 Reverse Proxy Lab
+
 ✅ Nginx Proxy Manager
 ✅ Domain Routing
 ✅ Local DNS Resolution
@@ -70,6 +72,7 @@ site1.local
 site2.local
 
 Linux Storage Management
+
 ✅ LVM
 ✅ Volume Group Expansion
 ✅ Logical Volume Extension
@@ -82,6 +85,7 @@ lsblk
 vgdisplay
 
 GitLab CI/CD Lab
+
 ✅ Self-hosted GitLab CE
 ✅ GitLab Runner
 ✅ Docker Executor
