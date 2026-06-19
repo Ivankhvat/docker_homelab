@@ -108,3 +108,17 @@ Implemented:
 
 Pipeline flow:
 Git Commit → GitLab → GitLab Runner → Docker Executor → Job Execution
+
+## GitLab CI/CD Lab
+
+Implemented:
+- Self-hosted GitLab CE
+- GitLab Runner
+- Docker Executor
+- CI/CD pipeline
+- Docker Compose syntax validation
+- Multi-stage pipeline: validate → test
+- Troubleshooting runner network and clone URL issues
+
+Pipeline result:
+- Pipeline #3: Passed
